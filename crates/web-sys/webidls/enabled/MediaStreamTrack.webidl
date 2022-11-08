@@ -58,6 +58,7 @@ dictionary MediaTrackConstraintSet {
     ConstrainBoolean noiseSuppression;
     ConstrainBoolean autoGainControl;
     ConstrainLong channelCount;
+    ConstrainDouble aspectRatio;
 };
 
 dictionary MediaTrackConstraints : MediaTrackConstraintSet {

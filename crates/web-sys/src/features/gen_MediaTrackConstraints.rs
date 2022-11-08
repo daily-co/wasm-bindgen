@@ -10,6 +10,10 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackConstraints`*"]
     pub type MediaTrackConstraints;
+    #[doc = "Change the `aspectRatio` field of this object."]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `MediaTrackConstraints`*"]
+    #[wasm_bindgen(method, setter = "aspectRatio")]
     #[doc = "Get the `autoGainControl` field of this object."]
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaTrackConstraints`*"]

@@ -76,6 +76,7 @@ interface RTCRtpSender {
   Promise<RTCStatsReport> getStats();
   [Pref="media.peerconnection.dtmf.enabled"]
   readonly attribute RTCDTMFSender? dtmf;
+  readonly attribute RTCDtlsTransport? transport;
   // Ugh, can't use a ChromeOnly attribute sequence<MediaStream>...
   [ChromeOnly]
   sequence<MediaStream> getStreams();

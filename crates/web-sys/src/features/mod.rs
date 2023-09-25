@@ -6268,6 +6268,18 @@ mod gen_RtcDegradationPreference;
 #[cfg(feature = "RtcDegradationPreference")]
 pub use gen_RtcDegradationPreference::*;
 
+#[cfg(feature = "RtcDtlsTransport")]
+#[allow(non_snake_case)]
+mod gen_RtcDtlsTransport;
+#[cfg(feature = "RtcDtlsTransport")]
+pub use gen_RtcDtlsTransport::*;
+
+#[cfg(feature = "RtcDtlsTransportState")]
+#[allow(non_snake_case)]
+mod gen_RtcDtlsTransportState;
+#[cfg(feature = "RtcDtlsTransportState")]
+pub use gen_RtcDtlsTransportState::*;
+
 #[cfg(feature = "RtcFecParameters")]
 #[allow(non_snake_case)]
 mod gen_RtcFecParameters;
@@ -6328,11 +6340,23 @@ mod gen_RtcIceServer;
 #[cfg(feature = "RtcIceServer")]
 pub use gen_RtcIceServer::*;
 
+#[cfg(feature = "RtcIceTransport")]
+#[allow(non_snake_case)]
+mod gen_RtcIceTransport;
+#[cfg(feature = "RtcIceTransport")]
+pub use gen_RtcIceTransport::*;
+
 #[cfg(feature = "RtcIceTransportPolicy")]
 #[allow(non_snake_case)]
 mod gen_RtcIceTransportPolicy;
 #[cfg(feature = "RtcIceTransportPolicy")]
 pub use gen_RtcIceTransportPolicy::*;
+
+#[cfg(feature = "RtcIceTransportState")]
+#[allow(non_snake_case)]
+mod gen_RtcIceTransportState;
+#[cfg(feature = "RtcIceTransportState")]
+pub use gen_RtcIceTransportState::*;
 
 #[cfg(feature = "RtcIdentityAssertion")]
 #[allow(non_snake_case)]

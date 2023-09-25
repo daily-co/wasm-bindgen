@@ -28,6 +28,14 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `RtcRtpSender`, `RtcdtmfSender`*"]
     pub fn dtmf(this: &RtcRtpSender) -> Option<RtcdtmfSender>;
+    #[cfg(feature = "RtcDtlsTransport")]
+    # [wasm_bindgen (structural , method , getter , js_class = "RTCRtpSender" , js_name = transport)]
+    #[doc = "Getter for the `transport` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpSender/transport)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `RtcDtlsTransport`, `RtcRtpSender`*"]
+    pub fn transport(this: &RtcRtpSender) -> Option<RtcDtlsTransport>;
     #[cfg(feature = "RtcRtpParameters")]
     # [wasm_bindgen (method , structural , js_class = "RTCRtpSender" , js_name = getParameters)]
     #[doc = "The `getParameters()` method."]

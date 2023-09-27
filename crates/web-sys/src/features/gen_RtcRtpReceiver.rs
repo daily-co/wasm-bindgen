@@ -20,6 +20,14 @@ extern "C" {
     #[doc = ""]
     #[doc = "*This API requires the following crate features to be activated: `MediaStreamTrack`, `RtcRtpReceiver`*"]
     pub fn track(this: &RtcRtpReceiver) -> MediaStreamTrack;
+    #[cfg(feature = "RtcDtlsTransport")]
+    # [wasm_bindgen (structural , method , getter , js_class = "RTCRtpReceiver" , js_name = transport)]
+    #[doc = "Getter for the `transport` field of this object."]
+    #[doc = ""]
+    #[doc = "[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCRtpReceiver/transport)"]
+    #[doc = ""]
+    #[doc = "*This API requires the following crate features to be activated: `RtcDtlsTransport`, `RtcRtpReceiver`*"]
+    pub fn transport(this: &RtcRtpReceiver) -> Option<RtcDtlsTransport>;
     #[cfg(web_sys_unstable_apis)]
     # [wasm_bindgen (structural , method , getter , js_class = "RTCRtpReceiver" , js_name = jitterBufferTarget)]
     #[doc = "Getter for the `jitterBufferTarget` field of this object."]

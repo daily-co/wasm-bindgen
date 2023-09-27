@@ -16,6 +16,7 @@ interface RTCRtpReceiver {
   sequence<RTCRtpContributingSource>    getContributingSources();
   [Pref="media.peerconnection.rtpsourcesapi.enabled"]
   sequence<RTCRtpSynchronizationSource> getSynchronizationSources();
+  readonly attribute RTCDtlsTransport?  transport;
 
   [ChromeOnly]
   undefined setStreamIds(sequence<DOMString> streamIds);
